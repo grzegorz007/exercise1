@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script id="template1" type="x-tmpl-mustache">
+            
+        {{#.}}
+        <ul>
+        <li> @  {{userId}}: {{title}}</li> 
+        </ul>
+     {{/.}}
+
+</script>
+<script id="template2" type="x-tmpl-mustache">
+
+        {{#.}}
+        <p>{{body}} </p>
+        {{/.}}
+
+</script>
+</head>
+<header>
+    <div class="header">
+        <div class="fblogo"><img src="http://static.wirtualnemedia.pl/media/top/facebook-655_1499116629.jpg"></div>
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <div id="target"></div>
+        <div id="target3"></div>
+    </div>
+    <div class="container">
+        <div id="target2"></div>
+        <div id="target4"></div>
+        </div>
+</body>
+<script src="main.js"></script>
+</html>
